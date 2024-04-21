@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  
+}
+body{
+  background-color: rgb(16, 15, 15);
+}
+
+.flex{
+  display: flex;
+  /* background-color: black; */
+}
+.ldimen{
+  width: 30vw;
+  height: 97vh;
+  
+}
+.cdimen{
+  width: 40vw;
+  height: 97vh;
+  
+}
+.rdimen{
+  width: 30vw;
+  height: 97vh;
+}
+.m{
+  border: 2px solid rgb(103, 102, 102);
+}
+.fc{
+  flex-direction: column;
+  gap: 20px;
+}
+.fr{
+  flex-direction: row;
+  gap: 20px;
+}
+.cw{
+  color: white;
+}
+.icon{
+  height: 40px;
+  width: 40px;
+}
+.border{
+border: 1px solid white;  
+}
+.bor1{
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.dib{
+  height: 190px;
+  width: 400px;
+}
+
+.margin1{
+  margin: 30px;
+}
+
+.photo{
+  height: 200px;
+  width: 50px;
+}
+.div1{
+  height: 50px;
+}
+.d{
+  height: 0px;
+}
+
+.small{
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+  
+}
+.style{
+  list-style: none;
+}
+.button{
+  border-radius: 10%;
+ background-color: blue ;
+ color: white;
+ width: 100px;
+
+}
+.gap{
+  gap: 90px;
+}
+.my{
+  height: 60px;
+  width:60px;
+}
+.margin-t{
+margin-top: 10px;
+}
+.cont{
+  
+}
+.grey{
+  color: grey;
+}
+.margin-5{
+  margin-top: 3px;
+  margin-left: 15px;
+}
+.margin-left-1{
+  margin-left: 140px;
+  
+}
+.margin-left-1-1{
+  margin-left: 40px;
+  
+}
+
+.dimen{
+  height: 100px;
+  width: 400px;
+}
+.invert{
+  filter: invert(1);
+}
+.icon-q{
+  height: 30px;
+  width: 30px;
+}
