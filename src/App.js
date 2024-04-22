@@ -34,17 +34,17 @@ function App() {
 
         <div className="left ldimen m cw">
           <ul className="flex fc margin1">
-            <l1 ><img src={Twitter} alt="" className='icon invert' />  Twitter</l1>
-            <l1><img src={home} alt="" className='icon' /> Home</l1>
-            <l1><img src={explore} alt="" className='icon' /> Explore</l1>
-            <l1><img src={notification} alt="" className='icon' /> Notifications</l1>
-            <l1><img src={comments} alt="" className='icon' /> Gork</l1>
-            <l1><img src={list} alt="" className='icon' /> List</l1>
-            <l1><img src={book} alt="" className='icon' /> Bookmarks</l1>
-            <l1><img src={communities} alt="" className='icon' /> Communities</l1>
-            <l1><img src={prem} alt="" className='icon' /> Premium</l1>
-            <l1><img src={profile} alt="" className='icon' /> Profile</l1>
-            <l1><img src={menu} alt="" className='icon' /> More</l1>
+            <l1 ><div className='flex-j-c'><img src={Twitter} alt="" className='icon invert' /> <h3>Twitter</h3></div></l1>
+            <l1><div className='flex-j-c'><img src={home} alt="" className='icon' /> <h3>Home</h3> </div></l1>
+            <l1><div className='flex-j-c'><img src={explore} alt="" className='icon' /> <h3>Explore</h3> </div></l1>
+            <l1><div className='flex-j-c'><img src={notification} alt="" className='icon' /> <h3>Notifications</h3> </div></l1>
+            <l1><div className='flex-j-c'><img src={comments} alt="" className='icon' /> <h3>Gork</h3></div></l1>
+            <l1><div className='flex-j-c'><img src={list} alt="" className='icon' /> List </div></l1>
+            <l1><div className='flex-j-c'><img src={book} alt="" className='icon' /> <h3>Bookmarks</h3> </div></l1>
+            <l1><div className='flex-j-c'><img src={communities} alt="" className='icon' /><h3>Communities</h3>  </div></l1>
+            <l1><div className='flex-j-c'><img src={prem} alt="" className='icon' /> <h3>Premium</h3> </div></l1>
+            <l1><div className='flex-j-c'><img src={profile} alt="" className='icon' /> <h3>Profile</h3></div></l1>
+            <l1><div className='flex-j-c'><img src={menu} alt="" className='icon' /><h3>More </h3> </div></l1>
           </ul>
         </div>
         <div className="center cdimen m cw   ">
@@ -79,11 +79,11 @@ function App() {
             <div className="e2 dimen margin-left-1 margin-t"><p>I spent $44 billion for this app and now Lizard boy just decided to hit copy and paste. It’s personal now. See you in the cage, Zuck.</p></div>
             <div className="e3">
               <ul>
-                <li className='flex margin-left-1'>
-                  <p className='flex '><img className='invert icon-q' src={commet1} alt="" /> 1k</p>
-                  <p className='flex margin-left-1-1' ><img className='invert icon-q' src={like} alt="" /> 1k</p>
-                  <p className='flex margin-left-1-1'><img className='invert icon-q' src={share} alt="" />  1k</p>
-                  <p className='flex margin-left-1-1'><img className='invert icon-q' src={poll} alt="" />  1k</p>
+                <li className='flex margin-left-1 gap'>
+                  <p className='flex-j-c   '><img className='invert icon-q' src={commet1} alt="" /> 1k</p>
+                  <p className='flex-j-c  ' ><img className='invert icon-q' src={like} alt="" /> 1k</p>
+                  <p className='flex-j-c '><img className='invert icon-q' src={share} alt="" />  1k</p>
+                  <p className='flex-j-c '><img className='invert icon-q' src={poll} alt="" />  1k</p>
                 </li>
               </ul>
             </div>

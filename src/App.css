@@ -132,3 +132,16 @@ margin-top: 10px;
   height: 30px;
   width: 30px;
 }
+
+.flex-j-c{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+}
+.blu{
+  color: rgb(38, 38, 230);
+}
+.gap{
+  gap: 10px;
+}
