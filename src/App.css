@@ -63,6 +63,10 @@ border: 1px solid white;
 .margin1{
   margin: 30px;
 }
+.social{
+  height: 20px;
+  width: 20px;
+}
 
 .photo{
   height: 200px;
@@ -86,25 +90,27 @@ border: 1px solid white;
   list-style: none;
 }
 .button{
-  border-radius: 10%;
- background-color: blue ;
+  border-radius: 15px;
+ background-color: rgb(76, 76, 226) ;
  color: white;
  width: 100px;
+ font-weight: bolder;
 
 }
-.gap{
+.gap-1{
   gap: 90px;
 }
 .my{
   height: 60px;
   width:60px;
 }
+.pad-20px{
+  padding: 20px;
+}
 .margin-t{
 margin-top: 10px;
 }
-.cont{
-  
-}
+
 .grey{
   color: grey;
 }
@@ -116,9 +122,15 @@ margin-top: 10px;
   margin-left: 140px;
   
 }
+.pallet-rad{
+  border-radius: 30px;
+}
 .margin-left-1-1{
   margin-left: 40px;
   
+}
+.pad-20px{
+  padding: 20px;
 }
 
 .dimen{
@@ -132,6 +144,11 @@ margin-top: 10px;
   height: 30px;
   width: 30px;
 }
+.flex-cont{
+  display: flex;
+  gap: 240px;
+  flex-direction: row;
+}
 
 .flex-j-c{
   display: flex;
@@ -139,9 +156,84 @@ margin-top: 10px;
   align-items: center;
   gap: 20px;
 }
+.flex-j-c-1{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 5px;
+}
 .blu{
-  color: rgb(38, 38, 230);
+  color: rgb(76, 76, 226);
 }
 .gap{
   gap: 10px;
+}
+.height{
+  height: 60px;
+}
+.flex-cont-r{
+  display: flex;
+  flex-direction: row;
+}
+.photo-ban{
+  height: 400px;
+  width: 500px;
+}
+.overflow{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.gap-3{
+  gap: 30px;
+}
+.car{
+  height: 300px;
+  width: 30vw;
+
+}
+.space{
+  justify-content: space-between;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; }
+.pallet{
+  box-shadow: rgba(98, 97, 97, 0.588) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  height: 210px;
+  width: 330px;
+  padding: 20px;
+}
+
+.fonti{
+  font-size: smaller;
+}
+.margin-20{
+  margin-top: 20px;
+}
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
