@@ -1,3 +1,5 @@
+import React,{ useState } from 'react';
+
 import logo from './logo.svg';
 import './App.css';
 import home from './images/home.png'
@@ -29,13 +31,51 @@ import social from './images/social-media.png'
 
 
 function App() {
+
+  const [dark, setDark] = useState({
+    backgroundColor: 'black',
+    color: 'white'})
+  const[text,settext]=useState('DARK')
+  const[invert,setinvert]=useState({
+    filter:'invert(1)'
+  })
+  
+  const change = () => {
+    if (dark.color === 'white') {
+      setDark({
+        backgroundColor: 'white',
+        color: 'black',
+        borderColor:'black',
+        
+      });
+      settext('DARK')
+      setinvert({
+        filter:'invert(0)'
+
+      })
+    } else {
+      setDark({
+        backgroundColor: 'black',
+        color: 'white',
+        borderColor:'grey',
+        
+        
+      });
+      setinvert({
+        filter:'invert(1)'
+
+      })
+      settext('LIGHT')
+    }
+  };
+
   return (
     <>
       <div className="window flex m">
 
-        <div className="left ldimen m cw">
-          <ul className="flex fc margin1">
-            <l1 ><div className='flex-j-c'><img src={Twitter} alt="" className='icon invert' /> <h3>Twitter</h3></div></l1>
+        <div className="left ldimen m cw" style={dark}>
+          <ul className="flex fc margin1 ">
+            <l1 ><div className='flex-j-c'><img src={Twitter}  alt="" className='icon invert' /> <h3>Twitter</h3></div></l1>
             <l1><div className='flex-j-c'><img src={home} alt="" className='icon' /> <h3>Home</h3> </div></l1>
             <l1><div className='flex-j-c'><img src={explore} alt="" className='icon' /> <h3>Explore</h3> </div></l1>
             <l1><div className='flex-j-c'><img src={notification} alt="" className='icon' /> <h3>Notifications</h3> </div></l1>
@@ -48,11 +88,11 @@ function App() {
             <l1><div className='flex-j-c'><img src={menu} alt="" className='icon' /><h3>More </h3> </div></l1>
           </ul>
         </div>
-        <div className="center cdimen m cw  overflow  ">
-          <div className="cont1 flex border pallet-rad pad-20px">
+        <div className="center cdimen m cw  overflow  "style={dark}>
+          <div className="cont1 flex border pallet-rad pad-20px "style={dark}>
 
-            <div className="center-1   margin1 photo"><img src={my} className='my bor1' alt="" /></div>
-            <div className="center-2  dib margin1 b">
+            <div className="center-1   margin1 photo" style={dark}><img src={my} className='my bor1' alt="" /></div>
+            <div className="center-2  dib margin1 b" style={dark}>
               <div className="parts-top div1  ">What is happening ?</div>
               <div className="parts-top div1 blu "><img src="" alt="" />Everyone can reply</div>
               <div className="parts-top d border"></div>
@@ -66,12 +106,12 @@ function App() {
                   <li><img className='small' src={smile} alt="" /></li>
                   <li><img className='small' src={calender} alt="" /></li>
                 </ul>
-                <button className='button margin-t'>POST</button>
+                <button className='button margin-t'onClick={change}>{text}</button>
 
               </div>
             </div>
           </div>
-          <div className="cont2  border margin-t pad-20px pallet-rad">
+          <div className="cont2  border margin-t pad-20px pallet-rad" style={dark}>
 
             <div className="e1 flex margin-left-1 ">
               <h4 className=''>Elon Musk</h4>
@@ -91,7 +131,7 @@ function App() {
 
           </div>
 
-          <div className="cont3 border flex-j-c fc margin-t pallet-rad pad-20px">
+          <div className="cont3 border flex-j-c fc margin-t pallet-rad pad-20px" style={dark}>
             <div className="con1 flex-j-c">
               <div className="icon photo margin1  height"><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdALl5Pwb2mrMVMzjqES0ZNXPARVVPvwVaQw&s' className='my bor1' alt="" /></div>
               <div className="text1 ">
@@ -122,7 +162,7 @@ function App() {
             </div>
           </div>
 
-          <div className="cont3 border flex-j-c fc margin-t pallet-rad pad-20px ">
+          <div className="cont3 border flex-j-c fc margin-t pallet-rad pad-20px " style={dark}>
             <div className="con1 flex-j-c">
               <div className="icon photo margin1  height"><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdALl5Pwb2mrMVMzjqES0ZNXPARVVPvwVaQw&s' className='my bor1' alt="" /></div>
               <div className="text1 ">
@@ -154,7 +194,7 @@ function App() {
           </div>
 
         </div>
-        <div className="right rdimen m cw flex-j-c overflow fc">
+        <div className="right rdimen m cw flex-j-c overflow fc"style={dark}>
           <h3>Trending</h3>
           <div className='pallet border flex-j-c-1 fc fonti pallet-rad example'><h3 className=''>#EarthDay</h3><p>A history of the movement by EarthDay.org, where Hayes remains board chair emeritus, says the date of the first Earth Day — April 22, 1970 — was chosen because it fell on a weekday between spring break and final exams and the aim was to attract as many students as possible.</p></div>
           <div className='pallet border flex-j-c fc fonti pallet-rad example'><h3 className=''>#WWERaw</h3><p>We have a developing story: Michael Cole and Pat McAfee are in the ring. Cole talks about how Rhea Ripley had to vacate her Women’s World Championship due to injury. McAfee says for only the fourth time ever, a Battle Royal will determine a new World Champion. The last woman standing will be the brand new Women’s World Champion.</p></div>
